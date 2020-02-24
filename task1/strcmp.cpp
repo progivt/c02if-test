@@ -32,8 +32,8 @@ int main(int argc, char * argv[])
 		std::string p = ouf.readString();
 		if (j != p)
 			quitf(_wa, "lines differ - expected: '%s' (len:%d, bytes:%s), found: '%s' (len:%d, bytes:%s)",
-				compress(p).c_str(), p.size(), compress(escape(p)).c_str(),
-				compress(j).c_str(), j.size(), compress(escape(j)).c_str());
+				compress(j).c_str(), j.size(), compress(escape(j)).c_str(),
+				compress(p).c_str(), p.size(), compress(escape(p)).c_str());
 	}
 
 	quitf(_ok, "single line: '%s'", compress(strAnswer).c_str());
